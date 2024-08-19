@@ -1,0 +1,9 @@
+server:
+  port: "8080"
+
+database:
+  uri: "mongodb://localhost:27017"
+  database: "student_management"
+
+jwt:
+  secret_key: "Sanathg@1"

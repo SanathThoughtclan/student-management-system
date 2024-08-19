@@ -1,0 +1,12 @@
+2024/08/19 18:49:31 server.go:60: Shutting down server...
+2024/08/19 18:49:31 main.go:16: Server execution interrupted : http: Server closed
+2024/08/19 18:49:39 server.go:53: Starting server on :8080
+2024/08/19 18:50:05 logger.go:18: INFO: Student deleted successfully - ID: 66c33c81e934c849564ed5f4
+2024/08/19 18:50:05 logger.go:18: INFO: Student deleted successfully - ID: 66c33c81e934c849564ed5f4
+2024/08/19 19:45:55 server.go:58: Shutting down server...
+2024/08/19 19:45:55 server.go:67: Server shut down gracefully
+2024/08/19 19:59:28 server.go:53: Starting server on :8080
+2024/08/19 20:02:02 logger.go:29: INFO: Student created successfully - Name: Raj
+2024/08/19 20:07:08 logger.go:29: INFO: Student created successfully - Name: Raj
+2024/08/19 20:07:25 logger.go:29: INFO: Student created successfully - Name: bhos
+2024/08/19 20:09:33 logger.go:25: INFO: All students fetched successfully
