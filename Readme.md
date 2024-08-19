@@ -79,5 +79,5 @@ The Project includes JWT-based authentication, appropriate HTTP status codes, co
 
 7. DELETE /api/students/{id}: Delete a student record by ID.
 
-& curl -X DELETE http://localhost:8080/api/students/ <! -- student's objectID eg -->  66c344879f96fc80f5765a5b `
+& curl -X DELETE http://localhost:8080/api/students/ student's objectID eg  66c344879f96fc80f5765a5b `
 -H "Authorization:auth token generated while logging in"
