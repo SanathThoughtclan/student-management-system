@@ -42,7 +42,7 @@ The Project includes JWT-based authentication, appropriate HTTP status codes, co
 
 & curl -X POST http://localhost:8080/register -H "Content-Type: application/json" -d '{\"UserID\":\"1\",\"username\":\"john\",\"password\":\"123\"}'
 
-2. POST/Login: Authenticate and login the admin:-
+2. POST/Login: Authenticate and login the admin using username and password:-
 
 & curl -X POST http://localhost:8080/login -H "Content-Type: application/json" -d '{\"username\":\"sanath\",\"password\":\"123\"}'
 
