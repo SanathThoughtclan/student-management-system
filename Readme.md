@@ -1,8 +1,8 @@
 # Student Management System
 Go for backend and Mongo for DB,
 The Project includes JWT-based authentication, appropriate HTTP status codes, context-based user information retrieval, and logging.
-One type of User - Admin
-Two types models - User(admin) and Student
+-One type of User - Admin
+-Two types of models - User(admin) and Student
 
 ## Features
 
