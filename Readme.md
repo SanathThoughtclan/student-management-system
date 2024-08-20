@@ -74,7 +74,7 @@ Two types models - User(admin) and Student
 6. PUT /api/students/{id}: Update a student record by ID.
 
 & curl -X PUT http://localhost:8080/api/students/  student's objectID eg:  66c344879f96fc80f5765a5b `
--H "Authorization:auth token generated while logging in" `
+-H "Authorization:auth token generated while logging in " `
 -H "Content-Type: application/json" `
 -d '{\"first_name\": \"Raj\", \"last_name\": \"kholi\", \"course\": \"Math\", \"grade\": \"q\"}'
 
@@ -82,7 +82,7 @@ Two types models - User(admin) and Student
 7. DELETE /api/students/{id}: Delete a student record by ID.
 
 & curl -X DELETE http://localhost:8080/api/students/ student's objectID eg  66c344879f96fc80f5765a5b `
--H "Authorization:auth token generated while logging in"
+-H "Authorization:auth token generated while logging in "
 
 ## Passing user-name  from http transport layer to the db layer-
 
