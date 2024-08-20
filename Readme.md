@@ -40,7 +40,7 @@ The Project includes JWT-based authentication, appropriate HTTP status codes, co
 
 ##  API Endpoints with a sample curl command:-
 
-1. POST/Register: register a new admin:-
+- ** 1. POST/Register: register a new admin ** :-
 
 	& curl -X POST http://localhost:8080/register -H "Content-Type: application/json" -d '{\"UserID\":\"1\",\"username\":\"john\",\"password\":\"123\"}'
 
