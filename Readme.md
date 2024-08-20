@@ -118,18 +118,18 @@ The service passes the username to the database layer, which can use it to ident
 ## Persisting the configuration information in a config file:-
 The config.go file loads the configuration from the confing.yaml file
 
-main() calls → LoadConfig().
-LoadConfig() calls → viper.ReadInConfig() to read the YAML file.
-viper.Unmarshal(config) populates the Config struct.
-Config struct is returned to main().
+- main() calls → LoadConfig().
+- LoadConfig() calls → viper.ReadInConfig() to read the YAML file.
+- viper.Unmarshal(config) populates the Config struct.
+- Config struct is returned to main().
 
 ## Logging:-
 
-Log Initialization: The logging system is initialized in utils/logger.go using InitLogger() function. Logs are written to app.log with timestamps and log levels (INFO and ERROR).
+- Log Initialization: The logging system is initialized in utils/logger.go using InitLogger() function. Logs are written to app.log with timestamps and log levels (INFO and ERROR).
 
-Logging Functions:
+- Logging Functions:
 
-LogInfo(message string, id string): Logs informational messages with an ID.
-LogError(message string, err error): Logs error messages with error details.
-LogInfo2(message string): Logs informational messages without ID.
-LogInfo3(message string, id string): Logs informational messages with a name.
+- LogInfo(message string, id string): Logs informational messages with an ID.
+- LogError(message string, err error): Logs error messages with error details.
+- LogInfo2(message string): Logs informational messages without ID.
+- LogInfo3(message string, id string): Logs informational messages with a name.
