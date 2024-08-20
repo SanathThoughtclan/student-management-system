@@ -1,6 +1,8 @@
 # Student Management System
 Go for backend and Mongo for DB,
 The Project includes JWT-based authentication, appropriate HTTP status codes, context-based user information retrieval, and logging.
+One type of User - Admin
+Two types models - User(admin) and Student
 
 ## Features
 
@@ -36,7 +38,7 @@ The Project includes JWT-based authentication, appropriate HTTP status codes, co
 ### View the changes/manipulations:-
 - Using mongoDB compass or express by connecting to port mongodb://localhost:27017
 
-## API Endpoints with a sample curl command:-
+##  API Endpoints with a sample curl command:-
 
 1. POST/Register: register a new admin:-
 
@@ -81,3 +83,53 @@ The Project includes JWT-based authentication, appropriate HTTP status codes, co
 
 & curl -X DELETE http://localhost:8080/api/students/ student's objectID eg  66c344879f96fc80f5765a5b `
 -H "Authorization:auth token generated while logging in"
+
+## Passing user-name  from http transport layer to the db layer-
+
+- 1.Middleware Layer(Auth):
+
+The middleware injects the admin name(username) into the context of the request.
+```
+username := claims["username"].(string)
+ctx := utils.NewContextWithUserName(r.Context(), username)
+```
+- 2.HTTP Layer(handler):
+
+The handler retrieves the admin name(username) from the context and uses it for further processing, such as creating and updating info of students.
+```
+	username, _ := utils.GetUsernameFromContext(ctx)
+	student.UpdatedBy = username
+
+```
+- 3.Service Layer:
+
+The service layer uses the username from the context passed down by the handler.
+```
+	user, err := s.repo.GetByUsername(ctx, username)
+```
+- 4 Repository(DB) Layer:
+- 
+The service passes the username to the database layer, which can use it to identify users and manipulate them.
+  ```
+  filter := bson.D{{Key: "username", Value: username}} 
+	err := r.collection.FindOne(ctx, filter).Decode(&user)
+  ```
+
+## Persisting the configuration information in a config file:-
+The config.go file loads the configuration from the confing.yaml file
+
+main() calls → LoadConfig().
+LoadConfig() calls → viper.ReadInConfig() to read the YAML file.
+viper.Unmarshal(config) populates the Config struct.
+Config struct is returned to main().
+
+## Logging:-
+
+Log Initialization: The logging system is initialized in utils/logger.go using InitLogger() function. Logs are written to app.log with timestamps and log levels (INFO and ERROR).
+
+Logging Functions:
+
+LogInfo(message string, id string): Logs informational messages with an ID.
+LogError(message string, err error): Logs error messages with error details.
+LogInfo2(message string): Logs informational messages without ID.
+LogInfo3(message string, id string): Logs informational messages with a name.
