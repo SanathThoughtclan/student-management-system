@@ -1,12 +1,204 @@
-2024/08/19 18:49:31 server.go:60: Shutting down server...
-2024/08/19 18:49:31 main.go:16: Server execution interrupted : http: Server closed
-2024/08/19 18:49:39 server.go:53: Starting server on :8080
-2024/08/19 18:50:05 logger.go:18: INFO: Student deleted successfully - ID: 66c33c81e934c849564ed5f4
-2024/08/19 18:50:05 logger.go:18: INFO: Student deleted successfully - ID: 66c33c81e934c849564ed5f4
-2024/08/19 19:45:55 server.go:58: Shutting down server...
-2024/08/19 19:45:55 server.go:67: Server shut down gracefully
-2024/08/19 19:59:28 server.go:53: Starting server on :8080
-2024/08/19 20:02:02 logger.go:29: INFO: Student created successfully - Name: Raj
-2024/08/19 20:07:08 logger.go:29: INFO: Student created successfully - Name: Raj
-2024/08/19 20:07:25 logger.go:29: INFO: Student created successfully - Name: bhos
-2024/08/19 20:09:33 logger.go:25: INFO: All students fetched successfully
+2024/08/20 13:09:12 server.go:53: Starting server on :8080
+2024/08/20 13:09:12 main.go:16: Server execution interrupted : listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2024/08/20 13:09:39 server.go:53: Starting server on :8080
+2024/08/20 13:09:39 main.go:16: Server execution interrupted : listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2024/08/20 13:10:43 server.go:53: Starting server on :8080
+2024/08/20 13:10:43 main.go:16: Server execution interrupted : listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2024/08/20 13:11:40 server.go:53: Starting server on :8080
+2024/08/20 13:11:46 logger.go:29: INFO: Student created successfully - Name: Raj
+2024/08/20 13:47:23 logger.go:18: INFO: Student updated successfully - ID: 66c448ba7edf2e519409d777
+2024/08/20 16:31:15 server.go:58: Shutting down server...
+2024/08/20 16:31:15 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 16:31:15 server.go:67: Server shut down gracefully
+2024/08/20 19:24:18 server.go:53: Starting server on :8080
+2024/08/20 19:24:36 user_repository.go:27: Error fetching user: mongo: no documents in result
+2024/08/20 19:24:36 logger.go:18: INFO: User created successfully - ID: 1
+2024/08/20 19:28:09 server.go:58: Shutting down server...
+2024/08/20 19:28:09 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 19:28:15 server.go:53: Starting server on :8080
+2024/08/20 19:28:24 user_repository.go:27: Error fetching user: mongo: no documents in result
+2024/08/20 19:28:24 user_repository.go:38: Error fetching user: mongo: no documents in result
+2024/08/20 19:28:24 logger.go:18: INFO: User created successfully - ID: 1
+2024/08/20 19:30:43 server.go:58: Shutting down server...
+2024/08/20 19:30:43 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 19:30:49 server.go:53: Starting server on :8080
+2024/08/20 19:30:58 user_repository.go:27: Error fetching user: mongo: no documents in result
+2024/08/20 19:30:58 user_repository.go:38: Error fetching user: mongo: no documents in result
+2024/08/20 19:30:58 logger.go:18: INFO: User created successfully - ID: 1
+2024/08/20 19:36:15 server.go:58: Shutting down server...
+2024/08/20 19:36:15 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 19:36:15 server.go:67: Server shut down gracefully
+2024/08/20 19:36:21 server.go:53: Starting server on :8080
+2024/08/20 19:36:33 user_repository.go:27: Error fetching user: mongo: no documents in result
+2024/08/20 19:40:31 server.go:58: Shutting down server...
+2024/08/20 19:40:31 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 19:40:32 server.go:53: Starting server on :8080
+2024/08/20 19:40:33 server.go:58: Shutting down server...
+2024/08/20 19:40:33 server.go:67: Server shut down gracefully
+2024/08/20 19:40:33 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 19:40:38 server.go:53: Starting server on :8080
+2024/08/20 19:41:24 logger.go:25: INFO: User login successfull
+2024/08/20 19:42:24 server.go:58: Shutting down server...
+2024/08/20 19:42:24 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 19:42:29 server.go:53: Starting server on :8080
+2024/08/20 19:42:33 logger.go:25: INFO: User login successfull
+2024/08/20 19:43:56 server.go:58: Shutting down server...
+2024/08/20 19:43:56 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 19:44:25 server.go:53: Starting server on :8080
+2024/08/20 19:44:29 logger.go:25: INFO: User login successfull
+2024/08/20 19:44:52 server.go:58: Shutting down server...
+2024/08/20 19:44:52 server.go:67: Server shut down gracefully
+2024/08/20 19:44:52 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 19:44:58 server.go:53: Starting server on :8080
+2024/08/20 19:45:02 logger.go:25: INFO: User login successfull
+2024/08/20 19:46:31 server.go:58: Shutting down server...
+2024/08/20 19:46:31 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 19:46:37 server.go:53: Starting server on :8080
+2024/08/20 19:46:40 logger.go:25: INFO: User login successfull
+2024/08/20 19:46:51 server.go:58: Shutting down server...
+2024/08/20 19:46:51 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 19:46:51 server.go:67: Server shut down gracefully
+2024/08/20 19:46:59 server.go:53: Starting server on :8080
+2024/08/20 19:47:05 logger.go:25: INFO: User login successfull
+2024/08/20 19:48:18 logger.go:29: INFO: Student created successfully - Name: Raj
+2024/08/20 19:49:17 logger.go:18: INFO: Student updated successfully - ID: 66bc7a80671686c742161107
+2024/08/20 19:49:23 logger.go:18: INFO: Student updated successfully - ID: 66bc7a80671686c742161107
+2024/08/20 19:50:15 logger.go:18: INFO: Student updated successfully - ID: 66bc7a80671686c742161107
+2024/08/20 19:50:59 server.go:58: Shutting down server...
+2024/08/20 19:50:59 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 19:51:06 server.go:53: Starting server on :8080
+2024/08/20 19:51:14 logger.go:18: INFO: Student updated successfully - ID: 66bc7a80671686c742161107
+2024/08/20 19:51:41 server.go:58: Shutting down server...
+2024/08/20 19:51:41 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 19:51:45 server.go:53: Starting server on :8080
+2024/08/20 19:51:51 logger.go:18: INFO: Student updated successfully - ID: 66bc7a80671686c742161107
+2024/08/20 19:59:11 server.go:58: Shutting down server...
+2024/08/20 19:59:11 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 19:59:16 server.go:53: Starting server on :8080
+2024/08/20 19:59:21 logger.go:18: INFO: Student updated successfully - ID: 66bc7a80671686c742161107
+2024/08/20 20:00:20 server.go:58: Shutting down server...
+2024/08/20 20:00:20 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:00:27 server.go:53: Starting server on :8080
+2024/08/20 20:00:32 logger.go:18: INFO: Student updated successfully - ID: 66bc7a80671686c742161107
+2024/08/20 20:03:31 server.go:58: Shutting down server...
+2024/08/20 20:03:31 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:03:38 server.go:53: Starting server on :8080
+2024/08/20 20:03:41 logger.go:18: INFO: Student updated successfully - ID: 66bc7a80671686c742161107
+2024/08/20 20:04:17 logger.go:25: INFO: User login successful
+2024/08/20 20:05:48 server.go:58: Shutting down server...
+2024/08/20 20:05:48 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:05:48 server.go:67: Server shut down gracefully
+2024/08/20 20:05:54 server.go:53: Starting server on :8080
+2024/08/20 20:06:09 logger.go:25: INFO: User login successful
+2024/08/20 20:06:38 logger.go:18: INFO: Student updated successfully - ID: 66bc7a80671686c742161107
+2024/08/20 20:07:29 logger.go:18: INFO: Student updated successfully - ID: 66c448ba7edf2e519409d777
+2024/08/20 20:09:35 server.go:58: Shutting down server...
+2024/08/20 20:09:35 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:09:35 server.go:67: Server shut down gracefully
+2024/08/20 20:09:41 server.go:53: Starting server on :8080
+2024/08/20 20:09:43 server.go:58: Shutting down server...
+2024/08/20 20:09:43 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:09:46 server.go:53: Starting server on :8080
+2024/08/20 20:10:38 user_repository.go:27: Error fetching user: mongo: no documents in result
+2024/08/20 20:10:55 server.go:58: Shutting down server...
+2024/08/20 20:10:55 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:10:55 server.go:67: Server shut down gracefully
+2024/08/20 20:10:59 server.go:53: Starting server on :8080
+2024/08/20 20:11:02 user_repository.go:27: Error fetching user: mongo: no documents in result
+2024/08/20 20:11:09 user_repository.go:27: Error fetching user: mongo: no documents in result
+2024/08/20 20:14:19 user_repository.go:27: Error fetching user: mongo: no documents in result
+2024/08/20 20:16:44 server.go:58: Shutting down server...
+2024/08/20 20:16:44 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:16:44 server.go:67: Server shut down gracefully
+2024/08/20 20:16:50 server.go:53: Starting server on :8080
+2024/08/20 20:16:52 server.go:58: Shutting down server...
+2024/08/20 20:16:52 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:16:55 server.go:53: Starting server on :8080
+2024/08/20 20:17:00 user_repository.go:25: Querying for username: sanath with filter: [{username sanath}]
+2024/08/20 20:17:00 user_repository.go:29: No user found for username: sanath
+2024/08/20 20:18:21 server.go:58: Shutting down server...
+2024/08/20 20:18:21 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:18:46 server.go:53: Starting server on :8080
+2024/08/20 20:19:19 user_repository.go:25: Querying for username: sanath with filter: [{username sanath}]
+2024/08/20 20:19:19 user_repository.go:29: No user found for username: sanath
+2024/08/20 20:23:11 server.go:58: Shutting down server...
+2024/08/20 20:23:11 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:23:16 server.go:53: Starting server on :8080
+2024/08/20 20:23:20 user_repository.go:25: Querying for username: sanath with filter: [{username sanath}]
+2024/08/20 20:23:20 user_repository.go:29: No user found for username: sanath
+2024/08/20 20:23:36 server.go:58: Shutting down server...
+2024/08/20 20:23:36 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:23:40 server.go:53: Starting server on :8080
+2024/08/20 20:23:44 user_repository.go:25: Querying for username: sanath with filter: [{username sanath}]
+2024/08/20 20:23:44 user_repository.go:29: No user found for username: sanath
+2024/08/20 20:25:23 server.go:58: Shutting down server...
+2024/08/20 20:25:23 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:25:28 server.go:53: Starting server on :8080
+2024/08/20 20:25:32 user_repository.go:25: Querying for username: sanath with filter: [{username sanath}]
+2024/08/20 20:25:32 user_repository.go:29: No user found for username: sanath
+2024/08/20 20:25:32 user_repository.go:42: Querying for user ID: 1 with filter: [{user_id 1}]
+2024/08/20 20:25:32 user_repository.go:46: No user found for ID: 1
+2024/08/20 20:26:10 user_repository.go:25: Querying for username: sanath545346 with filter: [{username sanath545346}]
+2024/08/20 20:26:10 user_repository.go:29: No user found for username: sanath545346
+2024/08/20 20:26:10 user_repository.go:42: Querying for user ID: 1 with filter: [{user_id 1}]
+2024/08/20 20:26:10 user_repository.go:46: No user found for ID: 1
+2024/08/20 20:26:17 user_repository.go:25: Querying for username: sanath545346 with filter: [{username sanath545346}]
+2024/08/20 20:26:17 user_repository.go:29: No user found for username: sanath545346
+2024/08/20 20:26:17 user_repository.go:42: Querying for user ID: 100 with filter: [{user_id 100}]
+2024/08/20 20:26:17 user_repository.go:46: No user found for ID: 100
+2024/08/20 20:26:27 user_repository.go:25: Querying for username: sanath545346 with filter: [{username sanath545346}]
+2024/08/20 20:26:27 user_repository.go:29: No user found for username: sanath545346
+2024/08/20 20:26:27 user_repository.go:42: Querying for user ID: 100111 with filter: [{user_id 100111}]
+2024/08/20 20:26:27 user_repository.go:46: No user found for ID: 100111
+2024/08/20 20:30:20 server.go:58: Shutting down server...
+2024/08/20 20:30:20 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:30:20 server.go:67: Server shut down gracefully
+2024/08/20 20:30:25 server.go:53: Starting server on :8080
+2024/08/20 20:30:33 server.go:58: Shutting down server...
+2024/08/20 20:30:33 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:30:35 server.go:53: Starting server on :8080
+2024/08/20 20:30:36 server.go:58: Shutting down server...
+2024/08/20 20:30:36 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:30:40 server.go:53: Starting server on :8080
+2024/08/20 20:30:44 user_repository.go:25: Querying for username: sanath545346 with filter: [{username sanath545346}]
+2024/08/20 20:30:44 user_repository.go:29: No user found for username: sanath545346
+2024/08/20 20:30:44 user_repository.go:42: Querying for user ID: 100111 with filter: [{user_id 100111}]
+2024/08/20 20:30:44 user_repository.go:46: No user found for ID: 100111
+2024/08/20 20:30:44 logger.go:18: INFO: User created successfully - ID: 100111
+2024/08/20 20:31:16 user_repository.go:25: Querying for username: sanath with filter: [{username sanath}]
+2024/08/20 20:31:16 user_repository.go:29: No user found for username: sanath
+2024/08/20 20:31:16 user_repository.go:42: Querying for user ID: 1 with filter: [{user_id 1}]
+2024/08/20 20:31:16 user_repository.go:46: No user found for ID: 1
+2024/08/20 20:31:16 logger.go:18: INFO: User created successfully - ID: 1
+2024/08/20 20:31:21 user_repository.go:25: Querying for username: sanath with filter: [{username sanath}]
+2024/08/20 20:31:21 user_repository.go:35: Found user: {1 sanath $2a$10$iSBNSpUGP7a24L.lCWqfDO76csAJXr0Z81Sx8.1VA1q809LS3Nc2. 2024-08-20 15:01:16.577 +0000 UTC}
+2024/08/20 20:31:28 user_repository.go:25: Querying for username: sanath1 with filter: [{username sanath1}]
+2024/08/20 20:31:28 user_repository.go:29: No user found for username: sanath1
+2024/08/20 20:31:28 user_repository.go:42: Querying for user ID: 1 with filter: [{user_id 1}]
+2024/08/20 20:31:28 user_repository.go:52: Found user: {1 sanath $2a$10$iSBNSpUGP7a24L.lCWqfDO76csAJXr0Z81Sx8.1VA1q809LS3Nc2. 2024-08-20 15:01:16.577 +0000 UTC}
+2024/08/20 20:31:36 user_repository.go:25: Querying for username: sanath1 with filter: [{username sanath1}]
+2024/08/20 20:31:36 user_repository.go:29: No user found for username: sanath1
+2024/08/20 20:31:36 user_repository.go:42: Querying for user ID: 12 with filter: [{user_id 12}]
+2024/08/20 20:31:36 user_repository.go:46: No user found for ID: 12
+2024/08/20 20:31:36 logger.go:18: INFO: User created successfully - ID: 12
+2024/08/20 20:32:33 user_repository.go:25: Querying for username: sanath with filter: [{username sanath}]
+2024/08/20 20:32:33 user_repository.go:35: Found user: {1 sanath $2a$10$iSBNSpUGP7a24L.lCWqfDO76csAJXr0Z81Sx8.1VA1q809LS3Nc2. 2024-08-20 15:01:16.577 +0000 UTC}
+2024/08/20 20:32:34 logger.go:25: INFO: User login successful
+2024/08/20 20:33:34 logger.go:29: INFO: Student created successfully - Name: Raj
+2024/08/20 20:34:16 logger.go:29: INFO: Student created successfully - Name: Raj
+2024/08/20 20:34:40 logger.go:18: INFO: Student updated successfully - ID: 66bc7a80671686c742161107
+2024/08/20 20:35:20 logger.go:25: INFO: provided ID is not a valid student ID
+2024/08/20 20:35:45 logger.go:18: INFO: Student updated successfully - ID: 66c4b046d5faf129d55d5155
+2024/08/20 20:36:17 logger.go:18: INFO: Student updated successfully - ID: 66c4b070d5faf129d55d5156
+2024/08/20 20:36:34 logger.go:25: INFO: All students fetched successfully
+2024/08/20 20:40:45 server.go:58: Shutting down server...
+2024/08/20 20:40:45 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:40:54 server.go:53: Starting server on :8080
+2024/08/20 20:40:58 server.go:58: Shutting down server...
+2024/08/20 20:40:58 main.go:16: Server execution interrupted : http: Server closed
+2024/08/20 20:41:06 server.go:53: Starting server on :8080
+2024/08/20 20:41:07 server.go:58: Shutting down server...
+2024/08/20 20:41:07 server.go:67: Server shut down gracefully
+2024/08/20 20:41:10 server.go:53: Starting server on :8080
+2024/08/20 20:42:23 server.go:58: Shutting down server...
+2024/08/20 20:42:23 main.go:16: Server execution interrupted : http: Server closed

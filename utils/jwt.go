@@ -4,7 +4,6 @@ import (
 	"context"
 	"errors"
 
-	//"fmt"
 	"student-management-system/config"
 	"time"
 
@@ -14,7 +13,7 @@ import (
 type contextKey string
 
 const (
-	//UserIDKey   contextKey = "user_id"
+	UserIDKey   contextKey = "user_id"
 	UsernameKey contextKey = "username"
 )
 
@@ -44,19 +43,22 @@ func ParseJWT(tokenString string) (*jwt.Token, error) {
 	})
 }
 
-// func NewContextWithUserID(ctx context.Context, userID string) context.Context {
-// 	fmt.Println(userID)
+func NewContextWithUserID(ctx context.Context, userID string) context.Context {
 
-// 	return context.WithValue(ctx, UserIDKey, userID)
-// }
+	newCtx := context.WithValue(ctx, UserIDKey, userID)
 
-// func GetUserIDFromContext(ctx context.Context) (string, bool) {
-// 	userID, ok := ctx.Value(UserIDKey).(string)
-// 	return userID, ok
-// }
+	return newCtx
+
+}
+
+func GetUserIDFromContext(ctx context.Context) (string, bool) {
+	userID, ok := ctx.Value(UserIDKey).(string)
+	return userID, ok
+}
 
 func NewContextWithUserName(ctx context.Context, username string) context.Context {
 	newCtx := context.WithValue(ctx, UsernameKey, username)
+
 	return newCtx
 }
 

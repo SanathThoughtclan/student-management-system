@@ -94,20 +94,30 @@ func (h *StudentHandler) UpdateStudent(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	existingStudent, err := h.service.GetByID(ctx, id)
+	if err != nil {
+		http.Error(w, "Student does not Exist", http.StatusInternalServerError)
+		return
+	}
+	if existingStudent == nil {
+		http.Error(w, "Student not found", http.StatusNotFound)
+		return
+	}
+
 	student.UpdatedOn = time.Now().UTC()
 	student.UpdatedBy = username
 
-	err := h.service.Update(ctx, id, &student)
+	err = h.service.Update(ctx, id, &student)
 	if err != nil {
 		if err.Error() == "provided ID is not a valid student ID" {
 			http.Error(w, err.Error(), http.StatusBadRequest)
 		} else {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
+			http.Error(w, "Error updating student", http.StatusInternalServerError)
 		}
 		return
 	}
-	utils.LogInfo("Student updated successfully", id)
 
+	utils.LogInfo("Student updated successfully", id)
 	w.WriteHeader(http.StatusNoContent)
 }
 

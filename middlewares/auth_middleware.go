@@ -29,7 +29,9 @@ func JWTAuth(next http.Handler) http.Handler {
 		}
 
 		username := claims["username"].(string)
+		userID := claims["user_id"].(string)
 		ctx := utils.NewContextWithUserName(r.Context(), username)
+		ctx = utils.NewContextWithUserID(ctx, userID)
 
 		r = r.WithContext(ctx)
 		next.ServeHTTP(w, r)

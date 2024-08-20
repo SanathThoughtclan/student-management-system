@@ -23,17 +23,17 @@ func (h *AuthHandler) Login(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	token, err := h.service.Authenticate(r.Context(), user.UserID, user.Username, user.Password)
+	token, err := h.service.Authenticate(r.Context(), user.Username, user.Password)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusUnauthorized)
 		return
 	}
-	utils.LogInfo2("User login successfull")
+
+	utils.LogInfo2("User login successful")
 
 	json.NewEncoder(w).Encode(map[string]string{
 		"token": token,
 	})
-
 }
 func (h *AuthHandler) Register(w http.ResponseWriter, r *http.Request) {
 	var user models.User
