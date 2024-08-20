@@ -108,8 +108,7 @@ The service layer uses the username from the context passed down by the handler.
 	user, err := s.repo.GetByUsername(ctx, username)
 ```
 - 4 Repository(DB) Layer:
-- 
-The service passes the username to the database layer, which can use it to identify users and manipulate them.
+  The service passes the username to the database layer, which can use it to identify users and manipulate them.
   ```
   filter := bson.D{{Key: "username", Value: username}} 
 	err := r.collection.FindOne(ctx, filter).Decode(&user)
