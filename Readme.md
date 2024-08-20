@@ -131,8 +131,7 @@ The config.go file loads the configuration from the confing.yaml file
 
 - Logging Functions:
 
-- LogInfo(message string, id string): Logs informational messages with an ID.
+- LogInfo(message string, id string): Logs informational messages with an ID .
 - LogError(message string, err error): Logs error messages with error details.
-- LogInfo2(message string): Logs informational messages without ID.
-- LogInfo3(message string, id string): Logs informational messages with a name.
+
 ####  error handling and user input handing implemented for most cases
