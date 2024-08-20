@@ -84,7 +84,7 @@ The Project includes JWT-based authentication, appropriate HTTP status codes, co
 & curl -X DELETE http://localhost:8080/api/students/ student's objectID eg  66c344879f96fc80f5765a5b `
 -H "Authorization:auth token generated while logging in "
 
-## Passing user-name  from http transport layer to the db layer-
+## Passing user-name and ID from http transport layer to the db layer-
 
 - 1.Middleware Layer(Auth):
 
