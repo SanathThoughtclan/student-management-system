@@ -88,10 +88,13 @@ Two types models - User(admin) and Student
 
 - 1.Middleware Layer(Auth):
 
-The middleware injects the admin name(username) into the context of the request.
+The middleware injects the admin name(username) and ID into the context of the request.
 ```
 username := claims["username"].(string)
+userID := claims["user_id"].(string)
 ctx := utils.NewContextWithUserName(r.Context(), username)
+ctx = utils.NewContextWithUserID(ctx, userID)
+
 ```
 - 2.HTTP Layer(handler):
 
